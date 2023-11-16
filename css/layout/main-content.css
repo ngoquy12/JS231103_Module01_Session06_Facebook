@@ -1,0 +1,22 @@
+.main {
+  background-color: aqua;
+  width: 100%;
+  height: calc(100vh - 56px);
+  display: flex;
+  gap: 24px;
+}
+
+.main-left {
+  background-color: rgb(238, 255, 0);
+  flex: 1;
+}
+
+.main-content {
+  background-color: rgb(13, 255, 0);
+  flex: 3;
+}
+
+.main-right {
+  flex: 1;
+  background-color: rgb(255, 0, 195);
+}
