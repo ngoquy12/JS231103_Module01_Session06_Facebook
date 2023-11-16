@@ -2,7 +2,7 @@
   height: 56px;
   width: 100%;
   display: flex;
-  padding: 0 14px;
+  padding: 0 24px;
   justify-content: space-between;
   align-items: center;
 }
@@ -56,22 +56,75 @@
 
 .list-icon {
   display: flex;
-  gap: 18px;
+  gap: 24px;
   font-size: 20px;
 }
 
-.icon-messenger {
+.list-icon i:hover {
+  cursor: pointer;
+}
+
+.icon-messenger,
+.icon-bell {
   color: #0866ff;
   position: relative;
 }
 
-.count-messenger {
-  font-size: 10px;
+.count-messenger,
+.count-notifycation {
+  font-size: 8px;
   position: absolute;
   color: #fff;
   background-color: red;
-  padding: 2px 8px;
+  padding: 3px 5px;
   border-radius: 10px;
-  right: -13px;
+  right: -12px;
   top: -5px;
+  min-width: 10px;
+}
+
+.text-gray {
+  color: #a9a2a2;
+}
+
+/* Dropdonw */
+.icon-down {
+  position: relative;
+}
+
+.list-option {
+  position: absolute;
+  color: black;
+  right: -10px;
+  width: 180px;
+  top: 30px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dadada;
+  background-color: #fff;
+  border-radius: 4px;
+  display: none;
+}
+
+.icon-down:hover .list-option {
+  display: block;
+}
+
+.list-option::after {
+  content: "";
+  border-bottom: 10px solid #a9a2a2;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -10px;
+  right: 7px;
+}
+
+.list-option .option {
+  padding: 8px 16px;
+}
+
+.list-option .option:hover {
+  background-color: #dadada;
 }
